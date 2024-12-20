@@ -33,7 +33,13 @@
   </head>
   <body>
     <div class="wrapper">
-      <%= yield %>
+      <%= render "shared/sidebar" %> <!-- Sidebar -->
+      <div class="main-content">
+        <div class="content-wrapper">
+          <!-- Header e Conteúdo Principal -->
+          <%= yield %> <!-- O conteúdo principal vai aqui -->
+        </div>
+      </div>
     </div>
   </body>
 </html>

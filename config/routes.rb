@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get "graficos/grafico"
+  get "graficos/minigrafico"
   root "home#index"
   get "tables/datatables"
   get "tables/tabelas"

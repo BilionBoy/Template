@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
+  root "home#index"
   get "graficos/grafico"
   get "graficos/minigrafico"
-  root "home#index"
   get "tables/datatables"
   get "tables/tabelas"
-  get "component/avatars"
+  get "/component/avatars", defaults: { format: :html }
   get "component/buttoes"
   get "component/fontes"
   get "component/gridsystem"

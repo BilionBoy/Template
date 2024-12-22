@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
+  root "home#index"
   get "tables/datatables"
   get "tables/tabelas"
-  root "home#index"
   get "component/avatars"
   get "component/buttoes"
   get "component/fontes"

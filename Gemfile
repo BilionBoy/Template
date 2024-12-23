@@ -59,3 +59,6 @@ end
 # Gems para formatação ERB
 gem "rufo"
 gem "htmlbeautifier"
+
+# Gem Devise para Autenticação
+gem "devise", "~> 4.9"

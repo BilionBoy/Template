@@ -1,0 +1,121 @@
+/* Estilos gerais */
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.login-info {
+  background-color: #160d3d;
+  color: white;
+  padding: 3rem;
+  text-align: center;
+}
+
+.login-info h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.login-info h2 {
+  margin-bottom: 1rem;
+}
+
+.login-form {
+  background-color: white;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  width: 100%;
+}
+
+.form-wrapper h2 {
+  color: #160d3d;
+  font-weight: bold;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-group .form-control {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.input-group .form-control:focus {
+  border-color: #160d3d;
+}
+
+.btn-submit {
+  background-color: #160d3d;
+  border-color: #160d3d;
+  color: white;
+  width: 100%;
+  padding: 12px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}
+
+.btn-submit:hover {
+  background-color: #4a3a77;
+}
+
+.links {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.links a {
+  color: #160d3d;
+  text-decoration: none;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-info, .login-form {
+    padding: 2rem;
+  }
+}

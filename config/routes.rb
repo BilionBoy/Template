@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :useres
   root "home#index"
   get "graficos/grafico"
   get "graficos/minigrafico"

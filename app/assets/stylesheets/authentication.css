@@ -1,23 +1,47 @@
-/* Estilos gerais */
+/* Estilo para o fundo animado */
 body {
-  background-color: #f8f9fa;
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  background: linear-gradient(45deg, #121212, #1a1a1a); /* Tons escuros de cinza e preto */
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite; /* Animação suave */
 }
 
+/* Definindo a animação do fundo */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Manter a estrutura do conteúdo e centralização */
 .login-section {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  position: relative;
+  z-index: 1;
 }
 
 .container {
   max-width: 900px;
   width: 100%;
+  z-index: 2; /* Garante que o conteúdo fique acima do fundo animado */
 }
 
+
+p{
+  color: white;
+}
 .login-container {
   display: flex;
   flex-direction: row;
@@ -27,7 +51,7 @@ body {
 }
 
 .login-info {
-  background-color: #160d3d;
+  background-color: #121212; /* Cor mais escura para o fundo */
   color: white;
   padding: 3rem;
   text-align: center;
@@ -43,7 +67,7 @@ body {
 }
 
 .login-form {
-  background-color: white;
+  background-color: #1a1a1a; /* Cor de fundo mais suave */
   padding: 3rem;
   display: flex;
   justify-content: center;
@@ -55,7 +79,7 @@ body {
 }
 
 .form-wrapper h2 {
-  color: #160d3d;
+  color: #ffffff; /* Texto branco para contraste */
   font-weight: bold;
 }
 
@@ -64,33 +88,38 @@ body {
   display: flex;
   align-items: center;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Mais contraste com o fundo */
 }
 
 .input-group .form-control {
   padding: 10px;
-  border: 1px solid #ced4da;
+  border: 1px solid #333333; /* Borda escura para contrastar com o fundo */
   border-radius: 10px;
-  box-shadow: none;
+  background-color: #121212; /* Cor de fundo escura nos campos */
+  color: white; /* Texto claro dentro do campo */
 }
 
 .input-group .form-control:focus {
-  border-color: #160d3d;
+  border-color: #ffffff; /* Cor de foco branca para os campos */
+  background-color: #333333; /* Fundo mais claro ao focar */
 }
 
 .btn-submit {
-  background-color: #160d3d;
-  border-color: #160d3d;
+  width: 300px;
+  background-color: #333333; /* Botão escuro */
+  border-color: #333333;
   color: white;
-  width: 100%;
-  padding: 12px;
+  padding: 12px 24px;
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   font-size: 1rem;
+  max-width: 650px;
+  display: block;
+  margin: 0 auto;
 }
 
 .btn-submit:hover {
-  background-color: #4a3a77;
+  background-color: #555555; /* Cor de hover mais clara */
 }
 
 .links {
@@ -99,7 +128,7 @@ body {
 }
 
 .links a {
-  color: #160d3d;
+  color: #ffffff; /* Links em branco para contraste */
   text-decoration: none;
   display: block;
   margin-top: 0.5rem;

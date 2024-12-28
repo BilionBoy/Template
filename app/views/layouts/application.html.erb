@@ -14,6 +14,17 @@
     <%= stylesheet_link_tag "application",                                                              "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
     <% # App JS do projeto %>
+  </head>
+  <body>
+    <div class="wrapper">
+      <%= render "shared/sidebar" %>
+      <%= render "shared/navbar" %>
+      <div class="main-content">
+        <div class="content-wrapper">
+          <%= yield %> <!-- O conteúdo principal vai aqui -->
+        </div>
+      </div>
+    </div>
     <%= javascript_include_tag "/assets/js/core/jquery-3.7.1.min.js",                                   "data-turbo-track": "reload" %>
     <%= javascript_include_tag "/assets/js/core/popper.min.js",                                         "data-turbo-track": "reload" %>
     <%= javascript_include_tag "/assets/js/core/bootstrap.min.js",                                      "data-turbo-track": "reload" %>
@@ -29,16 +40,5 @@
     <%= javascript_include_tag "/assets/js/kaiadmin.min.js",                                            "data-turbo-track": "reload" %>
     <%= javascript_include_tag "/assets/js/setting-demo.js",                                            "data-turbo-track": "reload" %>
     <%= javascript_include_tag "/assets/js/demo.js",                                                    "data-turbo-track": "reload" %>
-  </head>
-  <body>
-    <div class="wrapper">
-      <%= render "shared/sidebar" %>
-      <%= render "shared/navbar" %>
-      <div class="main-content">
-        <div class="content-wrapper">
-          <%= yield %> <!-- O conteúdo principal vai aqui -->
-        </div>
-      </div>
-    </div>
   </body>
 </html>

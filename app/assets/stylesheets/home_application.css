@@ -19,8 +19,9 @@ body {
   background: #121212 !important
 }
 
-.sidebar .nav.nav-secondary>.nav-item a:hover i,   /* cores ícones do sidebar */
-.sidebar .nav.nav-secondary>.nav-item a:focus i, 
+.sidebar .nav.nav-secondary>.nav-item a:hover i,
+/* cores ícones do sidebar */
+.sidebar .nav.nav-secondary>.nav-item a:focus i,
 .sidebar .nav.nav-secondary>.nav-item a[data-toggle=collapse][aria-expanded=true] i,
 .sidebar[data-background-color="white"] .nav.nav-secondary>.nav-item a:hover i,
 .sidebar[data-background-color="white"] .nav.nav-secondary>.nav-item a:focus i,
@@ -28,22 +29,26 @@ body {
   color: #ffffff !important;
 }
 
-.sidebar .nav.nav-secondary>.nav-item a[data-toggle=collapse][aria-expanded=true]:before, /* cores ícones do sidebar */
+.sidebar .nav.nav-secondary>.nav-item a[data-toggle=collapse][aria-expanded=true]:before,
+/* cores ícones do sidebar */
 .sidebar[data-background-color="white"] .nav.nav-secondary>.nav-item a[data-toggle=collapse][aria-expanded=true]:before {
   background: #ffffff !important;
 }
 
-.sidebar .nav.nav-secondary>.nav-item.active a:before, /* cores ícones do sidebar */
+.sidebar .nav.nav-secondary>.nav-item.active a:before,
+/* cores ícones do sidebar */
 .sidebar[data-background-color="white"] .nav.nav-secondary>.nav-item.active a:before {
   background: #ffffff !important;
 }
 
-.sidebar .nav.nav-secondary>.nav-item.active a i, /* cores scroll do sidebar */
+.sidebar .nav.nav-secondary>.nav-item.active a i,
+/* cores scroll do sidebar */
 .sidebar[data-background-color="white"] .nav.nav-secondary>.nav-item.active a i {
   color: #ffffff !important;
 }
 
-.sidebar .nav.nav-secondary>.nav-item .nav-collapse li.active>a, /* cores scroll do sidebar */
+.sidebar .nav.nav-secondary>.nav-item .nav-collapse li.active>a,
+/* cores scroll do sidebar */
 .sidebar[data-background-color="white"] .nav.nav-secondary>.nav-item .nav-collapse li.active>a {
   color: #ffffff !important;
 }

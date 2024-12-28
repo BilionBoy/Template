@@ -1,19 +1,19 @@
 Rails.application.routes.draw do
-  devise_for :useres
+  devise_for :users
   root "home#index"
-  get "graficos/grafico"
-  get "graficos/minigrafico"
-  get "tables/datatables"
-  get "tables/tabelas"
-  get "/component/avatars", defaults: { format: :html }
-  get "component/buttoes"
-  get "component/fontes"
-  get "component/gridsystem"
-  get "component/notificacoes"
-  get "component/paineis"
-  get "component/simpleicons"
-  get "component/alertas"
-  get "component/tipografia"
-  get "home/conteudo"
-  get "up" => "rails/health#show", as: :rails_health_check
+  get "home/index", as: "home_index"
+  get "home/conteudo", as: "home_conteudo"
+  get "home/avatars", as: "home_avatars"
+  get "home/buttoes", as: "home_buttoes"
+  get "home/fontes", as: "home_fontes"
+  get "home/gridsystem", as: "home_gridsystem"
+  get "home/notificacoes", as: "home_notificacoes"
+  get "home/paineis", as: "home_paineis"
+  get "home/simpleicons", as: "home_simpleicons"
+  get "home/alertas", as: "home_alertas"
+  get "home/tipografia", as: "home_tipografia"
+  get "home/grafico", as: "home_grafico"
+  get "home/minigrafico", as: "home_minigrafico"
+  get "home/datatables", as: "home_datatables"
+  get "home/tabelas", as: "home_tabelas"
 end

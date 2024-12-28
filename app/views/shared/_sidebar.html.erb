@@ -20,12 +20,7 @@
     <div class="sidebar-content">
       <ul class="nav nav-secondary">
         <li class="nav-item active">
-          <a
-                  data-bs-toggle="collapse"
-                  href="#dashboard"
-                  class="collapsed"
-                  aria-expanded="false"
-                >
+          <a data-bs-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
             <i class="fas fa-home"></i>
             <p>Dashboard</p>
             <span class="caret"></span>
@@ -33,8 +28,8 @@
           <div class="collapse" id="dashboard">
             <ul class="nav nav-collapse">
               <li>
-                <a href="../demo1/index.html">
-                  <span class="sub-item">Dashboard 1</span>
+                <a href="<%= home_index_path %>">
+                  <span class="sub-item">Dashboard</span>
                 </a>
               </li>
             </ul>
@@ -55,42 +50,42 @@
           <div class="collapse" id="base">
             <ul class="nav nav-collapse">
               <li>
-                <a href="<%= component_avatars_path %>">
+                <a href="<%= home_avatars_path %>">
                   <span class="sub-item">Avatars</span>
                 </a>
               </li>
               <li>
-                <a href="<%= component_buttoes_path %>">
+                <a href="<%= home_buttoes_path %>">
                   <span class="sub-item">Botões</span>
                 </a>
               </li>
               <li>
-                <a href="<%= component_gridsystem_path %>">
+                <a href="<%= home_gridsystem_path %>">
                   <span class="sub-item">Grid System</span>
                 </a>
               </li>
               <li>
-                <a href="<%= component_paineis_path %>">
+                <a href="<%= home_paineis_path %>">
                   <span class="sub-item">Painéis</span>
                 </a>
               </li>
               <li>
-                <a href="<%= component_alertas_path %>">
+                <a href="<%= home_alertas_path %>">
                   <span class="sub-item">Alertas</span>
                 </a>
               </li>
               <li>
-                <a href="<%= component_fontes_path %>">
+                <a href="<%= home_fontes_path %>">
                   <span class="sub-item">Fonts</span>
                 </a>
               </li>
               <li>
-                <a href="<%= component_simpleicons_path %>">
+                <a href="<%= home_simpleicons_path %>">
                   <span class="sub-item">Icones Simples</span>
                 </a>
               </li>
               <li>
-                <a href="<%= component_tipografia_path %>">
+                <a href="<%= home_tipografia_path %>">
                   <span class="sub-item">Tipografia</span>
                 </a>
               </li>
@@ -122,12 +117,12 @@
           <div class="collapse" id="tables">
             <ul class="nav nav-collapse">
               <li>
-                <a href="<%= tables_tabelas_path %>">
+                <a href="<%= home_tabelas_path %>">
                   <span class="sub-item">Básicas Tabelas</span>
                 </a>
               </li>
               <li>
-                <a href="<%= tables_datatables_path %>">
+                <a href="<%= home_datatables_path %>">
                   <span class="sub-item">Datatables</span>
                 </a>
               </li>
@@ -143,12 +138,12 @@
           <div class="collapse" id="charts">
             <ul class="nav nav-collapse">
               <li>
-                <a href="<%= graficos_grafico_path %>">
+                <a href="<%= home_grafico_path %>">
                   <span class="sub-item">Gráficos</span>
                 </a>
               </li>
               <li>
-                <a href="<%= graficos_minigrafico_path %>">
+                <a href="<%= home_minigrafico_path %>">
                   <span class="sub-item">Minigráficos</span>
                 </a>
               </li>
@@ -156,12 +151,13 @@
           </div>
         </li>
         <li class="nav-item">
-          <a href="<%= component_notificacoes_path %>" class="nav-link">
+          <a href="<%= home_notificacoes_path %>" class="nav-link">
             <i class="fas fa-bell"></i>
             <p>Notificações </p>
           </a>
         </li>
-      </div>
+      </ul>
     </div>
   </div>
-  <!-- End Sidebar -->
+</div>
+<!-- End Sidebar -->

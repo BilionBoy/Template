@@ -56,6 +56,9 @@ group :test do
   gem "selenium-webdriver"
 end
 
+# Gems para o banco Postgresql
+gem "pg", "~> 1.4"
+
 # Gems para formatação ERB
 gem "rufo"
 gem "htmlbeautifier"

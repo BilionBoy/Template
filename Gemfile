@@ -56,6 +56,9 @@ group :test do
   gem "selenium-webdriver"
 end
 
+# Gems para formulários
+gem "simple_form"
+
 # Gems para o banco Postgresql
 gem "pg", "~> 1.4"
 

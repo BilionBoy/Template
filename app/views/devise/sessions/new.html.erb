@@ -12,6 +12,7 @@
             <h2 class="fw-bold">Login</h2>
             <p class="text">Entre com suas credenciais</p>
           </div>
+          <%= flash[:alert] %>
           <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
             <div class="input-group">
               <%= f.email_field :email, class: "form-control", placeholder: "Email" %>

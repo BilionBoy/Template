@@ -3,8 +3,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   protected
 
-  # Permitir o parâmetro `name` no registro
+  # Permitir os parâmetros `name`, `email`, `password`, e `password_confirmation` no registro
   def configure_sign_up_params
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:name])
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :email, :password, :password_confirmation])
   end
 end

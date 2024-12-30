@@ -1,15 +1,39 @@
-/* Estilo para o fundo animado */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
   height: 100vh;
-  background: linear-gradient(45deg, #121212, #1a1a1a);
-  /* Tons escuros de cinza e preto */
-  background-size: 400% 400%;
+  background-image: url("https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"), linear-gradient(45deg, #000000, #000000);
+  background-size: cover, 400% 400%;
+  background-blend-mode: overlay;
   animation: gradientAnimation 15s ease infinite;
-  /* Animação suave */
 }
+
+body,
+h1,
+h2,
+h3,
+p {
+  font-family: 'Nunito', sans-serif;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 /* Definindo a animação do fundo */
 @keyframes gradientAnimation {
@@ -26,7 +50,6 @@ body {
   }
 }
 
-/* Manter a estrutura do conteúdo e centralização */
 .login-section {
   display: flex;
   justify-content: center;
@@ -40,7 +63,6 @@ body {
   max-width: 900px;
   width: 100%;
   z-index: 2;
-  /* Garante que o conteúdo fique acima do fundo animado */
 }
 
 em {
@@ -60,8 +82,7 @@ p {
 }
 
 .login-info {
-  background-color: #121212;
-  /* Cor mais escura para o fundo */
+  background-color: #3a6785;
   color: white;
   padding: 3rem;
   text-align: center;
@@ -77,8 +98,7 @@ p {
 }
 
 .login-form {
-  background-color: #1a1a1a;
-  /* Cor de fundo mais suave */
+  background-color: #2a5065;
   padding: 3rem;
   display: flex;
   justify-content: center;
@@ -91,7 +111,6 @@ p {
 
 .form-wrapper h2 {
   color: #ffffff;
-  /* Texto branco para contraste */
   font-weight: bold;
 }
 
@@ -101,32 +120,26 @@ p {
   align-items: center;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  /* Mais contraste com o fundo */
 }
 
 .input-group .form-control {
   padding: 10px;
   border: 1px solid #333333;
-  /* Borda escura para contrastar com o fundo */
   border-radius: 10px;
   background-color: #121212;
-  /* Cor de fundo escura nos campos */
   color: white;
-  /* Texto claro dentro do campo */
 }
 
 .input-group .form-control:focus {
   border-color: #ffffff;
-  /* Cor de foco branca para os campos */
   background-color: #333333;
-  /* Fundo mais claro ao focar */
 }
 
 .btn-submit {
   width: 300px;
-  background-color: #333333;
+  background-color: #4294e5;
   /* Botão escuro */
-  border-color: #333333;
+  border-color: #4294e5;
   color: white;
   padding: 12px 24px;
   border-radius: 20px;
@@ -138,8 +151,7 @@ p {
 }
 
 .btn-submit:hover {
-  background-color: #555555;
-  /* Cor de hover mais clara */
+  background-color: #4294e5;
 }
 
 .links {
@@ -149,7 +161,6 @@ p {
 
 .links a {
   color: #ffffff;
-  /* Links em branco para contraste */
   text-decoration: none;
   display: block;
   margin-top: 0.5rem;

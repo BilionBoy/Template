@@ -12,13 +12,9 @@
             <h2 class="fw-bold">Recuperação de Senha</h2>
             <p class="text">Digite seu e-mail para enviar as instruções</p>
           </div>
-          <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-            <div class="input-group">
-              <%= f.email_field :email, class: "form-control", placeholder: "Email" %>
-            </div>
-            <div class="actions">
-              <%= f.submit "Enviar instruções", class: "btn-submit" %>
-            </div>
+          <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+            <%= f.input :email, placeholder: "Email", input_html: { class: "form-control" } %>
+            <%= f.button :submit, "Enviar instruções", class: "btn-submit" %>
           <% end %>
           <div class="links">
             <%= render "devise/shared/links" %>
